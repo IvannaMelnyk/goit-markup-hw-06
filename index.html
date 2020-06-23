@@ -309,44 +309,57 @@
         </ul>
       </div>
     </section>
+    <!--Модаальное окно-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close>Закрыть</button>
-        <form class="form js-speaker-form">
-          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-          <div class="form-field">
-            <input type="text" class="form-input" name="name" id="name" placeholder=" " autofocus />
-            <label for="name" class="form-label">Имя</label>
-            <span class="form-icon">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/symbol-defs.svg#close"></use>
+          </svg>
+        </button>
+        <b class="form-title">
+          Оставьте свои данные, мы вам перезвоним
+        </b>
+        <form class="form js-speaker-form" autocomplete="off">
+          <label class="form-field">
+            <input type="text" class="form-input" name="name" placeholder=" " />
+            <span class="form-label">Имя</span>
+            <span>
+              <svg class="form-icon">
+                <use href="./images/symbol-defs.svg#name"></use>
+              </svg>
             </span>
-          </div>
-
-          <div class="form-field">
-            <input type="text" class="form-input" name="tel" id="tel" placeholder=" " autocomplete="off" />
-            <label for="tel" class="form-label">Телефон</label>
-          </div>
-
-          <div class="form-field">
-            <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
-            <label for="mail" class="form-label">Почта</label>
-          </div>
-
-          <div class="form-field">
-            <textarea class="form-input comment" name="comment" id="comment" rows="8" placeholder=" "></textarea>
-            <label for="comment" class="form-label">Комментарий</label>
-          </div>
-
-          <div class="form-field">
-            <input type="checkbox" name="policy" id="policy">
-            <label for="policy">Соглашаюсь с рассылкой и принимаю</label>
-            <a href="policy">Условия договора</a>
-          </div>
-
-          <button type="submit" class="form-button">Отправить</button>
-
+          </label>
+          <label class="form-field">
+            <input type="tel" class="form-input" name="tel" placeholder=" " />
+            <span class="form-label">Телефон</span>
+            <span><svg class="form-icon">
+                <use href="./images/symbol-defs.svg#tel"></use>
+              </svg></span>
+          </label>
+          <label class="form-field">
+            <input type="email" class="form-input" name="mail" placeholder=" " />
+            <span class="form-label">Почта</span>
+            <span>
+              <svg class="form-icon">
+                <use href="./images/symbol-defs.svg#email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="form-field">
+            <textarea class="form-textarea" name="comment" placeholder=" "></textarea>
+            <span class="textarea-name">Комментарий</span>
+          </label>
+          <label class="form-agreement">
+            <input type="checkbox" name="agreement" class="agreement-check" />
+            <span class="custom-check"></span>
+            <span class="conditions">Соглашаюсь с рассылкой и принимаю
+              <a href="" class="conditions-colour">Условия договора</a>
+            </span>
+          </label>
+          <button class="form-button" type="submit">Отправить</button>
         </form>
       </div>
-
     </div>
   </main>
 
