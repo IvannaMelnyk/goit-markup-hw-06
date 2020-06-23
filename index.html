@@ -315,23 +315,25 @@
         <form class="form js-speaker-form">
           <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form-field">
-            <input type="text" name="name" id="name" autofocus />
-            <label for="name">Имя</label>
+            <input type="text" class="form-input" name="name" id="name" placeholder=" " autofocus />
+            <label for="name" class="form-label">Имя</label>
+            <span class="form-icon">
+            </span>
           </div>
 
           <div class="form-field">
-            <input type="text" name="tel" id="tel" autocomplete="off" />
-            <label for="tel">Телефон</label>
+            <input type="text" class="form-input" name="tel" id="tel" placeholder=" " autocomplete="off" />
+            <label for="tel" class="form-label">Телефон</label>
           </div>
 
           <div class="form-field">
-            <input type="email" name="mail" id="mail" />
-            <label for="mail">Почта</label>
+            <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
+            <label for="mail" class="form-label">Почта</label>
           </div>
 
           <div class="form-field">
-            <label for="comment">Комментарий</label>
-            <textarea name="comment" id="comment" rows="8"></textarea>
+            <textarea class="form-input comment" name="comment" id="comment" rows="8" placeholder=" "></textarea>
+            <label for="comment" class="form-label">Комментарий</label>
           </div>
 
           <div class="form-field">
@@ -389,11 +391,26 @@
           </li>
         </ul>
       </div>
-    </div>
 
-    <p class="footer-date container">
+      <!-- footer E-mail -->
+      <div class="footer-link">
+        <b class="footer-text">Подпишитесь на рассылку</b>
+        <form class="form-mail js-speaker-form">
+          <div class="mail-field">
+            <input class="mail-input" type="email" name="mail" id="mail" placeholder="E-mail" autocomplete="off" />
+          </div>
+          <button class="button-mail" type="submit">
+            Подписаться
+            <svg class="button-img" width="24" height="24">
+              <use href="./images/symbol-defs.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- <p class="footer-date container">
       2020 &#10072; Developed by GoIT Students
-    </p>
+    </p> -->
   </footer>
 
 
